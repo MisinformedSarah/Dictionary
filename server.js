@@ -20,14 +20,15 @@ const dictionary = [
 
 // using json with express
 app.use(express.json())
-// app.use(express.static('public'))
+///serving up the first static page
+app.use(express.static('public'))
 
-//givigng the static html
-app.get('/',(request,response)=>{
-    response.sendFile(__dirname+'/index.html')
+//givigng the static html only
+// app.get('/',(request,response)=>{
+//     response.sendFile(__dirname+'/index.html')
     
-    console.log('served html succ')
-})
+//     console.log('served html succ')
+// })
 
 //getting all the words inside
 app.get('/api',(request,response)=>{
@@ -50,3 +51,4 @@ app.get('/api/:word',(request,response)=>{
   }
 })
     
+//adding words
