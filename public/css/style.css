@@ -22,3 +22,7 @@ img{
 h1{
   color: red;
 }
+div,
+h1{
+  margin:10px; 
+}

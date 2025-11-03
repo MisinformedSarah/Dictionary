@@ -14,10 +14,22 @@
     <h2></h2>
     <button id='getWords'>Click for a random word from my dictionary</button>
     <div>
-        <label for="input">Get the meaning of the word</label>
-        <input id='input' type="text">
-        <button id="getMeaning">check</button>
-        <p id="meaning"></p>
+        <form action="/api/" method="GET">
+            <label for="input">Get the meaning of the word</label>
+            <input id='input' type="text">
+            <button id="getMeaning">check</button>
+            <p id="meaning"></p>
+        </form>
+        
+    </div>
+
+    <div class="addDiv">
+        <h1>Add Word</h1>
+        <form action="/api/addWord" method="POST">
+            <input type="text" name="word" placeholder="word">
+            <input type="text" name="meaning" placeholder="the meaning">
+            <button id="addButton">Add</button>
+        </form>
     </div>
     
     
